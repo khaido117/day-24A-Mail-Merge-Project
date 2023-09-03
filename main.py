@@ -1,8 +1,10 @@
 PLACEHOLDER = "[name]"
 
+#Open the invited name
 with open("./Input/Names/invited_names.txt") as names_file:
     names = names_file.readlines()
-    print(names)
+
+#open and replace placeholder name to invited name
 with open("./Input/Letters/starting_letter.txt") as letter_file:
     letter_content = letter_file.read()
     for name in names:
